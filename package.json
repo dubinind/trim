@@ -1,0 +1,25 @@
+{
+  "name": "trim",
+  "version": "1.0.0",
+  "description": "Сборка gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubinind/trim.git"
+  },
+  "author": "DubininD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dubinind/trim/issues"
+  },
+  "homepage": "https://github.com/dubinind/trim#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}
