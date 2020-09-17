@@ -4,94 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trim</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="./fonts/Gotham/gotham.css"> 
-    </head> 
-    <body>
+    <title>Trlm</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
     <header class="header">
-        <div class="header__menu">
-            <button class="header__btn">
-                <img src="./img/head-burger.svg" alt="logo">
-            </button>
-            
-        </div>
-        <nav class="header__navbar navbar">
-            <div class="navbar__list">
-                <button class="navbar__btn, navbar__btn_search"></button>
-                <button class="navbar__btn, navbar__btn_user"></button>
-                <button class="navbar__btn, navbar__btn_basket"></button>
+
+        <div class="header__wrapper">
+            <div class="header__wrap container">
+                <div class="header__menu">
+                    <button class="header__btn">
+                        <img src="./img/head-burger.svg" alt="logo">
+                    </button>
+                    <a href="#" class="header__link">trlm.ru</a></div>
+
+                <nav class="header__navbar navbar">
+                    <div class="navbar__list">
+                        <button class="navbar__btn navbar__btn--search">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.69765 15.3945C9.47389 15.3945 11.1068 14.7835 12.4096 13.7704L16.6394 18L18 16.6395L13.7701 12.4099C14.7843 11.1062 15.3953 9.47338 15.3953 7.69724C15.3953 3.45318 11.9419 0 7.69765 0C3.45336 0 0 3.45318 0 7.69724C0 11.9413 3.45336 15.3945 7.69765 15.3945ZM7.69765 1.92431C10.8816 1.92431 13.4709 4.51347 13.4709 7.69724C13.4709 10.881 10.8816 13.4702 7.69765 13.4702C4.51371 13.4702 1.92441 10.881 1.92441 7.69724C1.92441 4.51347 4.51371 1.92431 7.69765 1.92431Z" fill="#222222"/>
+                                </svg>
+                        </button>
+                        <button class="navbar__btn navbar__btn--user"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.0127 0.93573C6.2557 0.93573 4.0127 3.17873 4.0127 5.93573C4.0127 8.69273 6.2557 10.9357 9.0127 10.9357C11.7697 10.9357 14.0127 8.69273 14.0127 5.93573C14.0127 3.17873 11.7697 0.93573 9.0127 0.93573ZM9.0127 8.93573C7.3587 8.93573 6.0127 7.58973 6.0127 5.93573C6.0127 4.28173 7.3587 2.93573 9.0127 2.93573C10.6667 2.93573 12.0127 4.28173 12.0127 5.93573C12.0127 7.58973 10.6667 8.93573 9.0127 8.93573ZM18.0127 19.9357V18.9357C18.0127 15.0767 14.8717 11.9357 11.0127 11.9357H7.0127C3.1527 11.9357 0.0126953 15.0767 0.0126953 18.9357V19.9357H2.0127V18.9357C2.0127 16.1787 4.2557 13.9357 7.0127 13.9357H11.0127C13.7697 13.9357 16.0127 16.1787 16.0127 18.9357V19.9357H18.0127Z" fill="#222222"/>
+                            </svg></button>
+                        <button class="navbar__btn navbar__btn--basket"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.8571 4.8V2.4H8.33333V4.8H17.8571ZM7.14286 19.2C6.51139 19.2 5.90578 19.4529 5.45927 19.9029C5.01275 20.353 4.7619 20.9635 4.7619 21.6C4.7619 22.2365 5.01275 22.847 5.45927 23.2971C5.90578 23.7471 6.51139 24 7.14286 24C7.77432 24 8.37993 23.7471 8.82644 23.2971C9.27296 22.847 9.52381 22.2365 9.52381 21.6C9.52381 20.9635 9.27296 20.353 8.82644 19.9029C8.37993 19.4529 7.77432 19.2 7.14286 19.2ZM19.0476 19.2C18.4162 19.2 17.8105 19.4529 17.364 19.9029C16.9175 20.353 16.6667 20.9635 16.6667 21.6C16.6667 22.2365 16.9175 22.847 17.364 23.2971C17.8105 23.7471 18.4162 24 19.0476 24C19.6791 24 20.2847 23.7471 20.7312 23.2971C21.1777 22.847 21.4286 22.2365 21.4286 21.6C21.4286 20.9635 21.1777 20.353 20.7312 19.9029C20.2847 19.4529 19.6791 19.2 19.0476 19.2ZM7.34524 15.3L7.38095 15.156L8.45238 13.2H17.3214C18.2143 13.2 19 12.708 19.4048 11.964L24 3.552L21.9286 2.4H21.9167L20.6071 4.8L17.3214 10.8H8.96428L8.80952 10.476L6.14286 4.8L5.0119 2.4L3.89286 0H0V2.4H2.38095L6.66667 11.508L5.05952 14.448C4.86905 14.784 4.7619 15.18 4.7619 15.6C4.7619 16.2365 5.01275 16.847 5.45927 17.2971C5.90578 17.7471 6.51139 18 7.14286 18H21.4286V15.6H7.64286C7.4881 15.6 7.34524 15.468 7.34524 15.3Z" fill="#222222"/>
+                            </svg></button>
+                    </div>
+                </nav>
             </div>
-        </nav>
-        <div class="header__contact">
-            <button class="adress"></button>
-            <a href="tel:88005501980">8-800-550-19-80</a>
         </div>
-        <div class="catalog">
-            <button class="catalog__btn">Каталог</button>
+        <div class="container">
+            <div class="header__contact">
+                <button class="header__adress">Малиновского 
+                    <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.5V0.5H1V1.5H0Z" fill="#222222"/>
+                    <path d="M2 2.5H1V1.5H2V2.5Z" fill="#222222"/>
+                    <path d="M3 3.5H2V2.5H3V3.5Z" fill="#222222"/>
+                    <path d="M4 3.5V4.5H3V3.5H4Z" fill="#222222"/>
+                    <path d="M5 2.5V3.5H4V2.5H5Z" fill="#222222"/>
+                    <path d="M6 1.5H5V2.5H6V1.5Z" fill="#222222"/>
+                    <path d="M6 1.5H7V0.5H6V1.5Z" fill="#222222"/>
+                    </svg></button>
+                <a class="header__tel" href="tel:88005501980">8-800-550-19-80</a>
+            </div>
+            <div class="catalog">
+                <button class="catalog__btn">
+                    <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="22" height="3" rx="0.7" fill="white"/>
+                        <rect y="12" width="22" height="3" rx="0.7" fill="white"/>
+                        <rect y="6" width="22" height="3" rx="0.7" fill="white"/>
+                        </svg>
+                        Каталог</button>
+            </div>
         </div>
+
+
     </header>
     <main class="main">
         <h1 class="visually-hidden">Trlm</h1>
-    <section class="slider">
-        <h2 class="visuallyhidden">Слайдер с предложениями</h2>
-        <div class="slider__item">
-         Фильтр масла в подарок</div>
-    </section> 
-    <section class="event">
-        <div class="event__card">
-            <h3 class="event__name">Бесплатный звонок</h3>
-            <p class="event__info">
-                На любые номера РФ
-                <a href="tel:88005501980" class="event__number" >8 800 550-19-80</a>
-            </p>
-            <button class="event__btn event__btn-whatsapp">WhatsApp</button>
-        </div>
-        <div class="event__card">
-            <h3 class="event__name">Бесплатный подбор</h3>
-            <p class="event__info">Мы найдем самую низкую цену на оригинальную запчасть, достойную альтернативу или самый дешевый аналог.
-            </p>
-            <button class="event__btn">Заявка на подбор</button>
-        </div>
-        <div class="event__card">
-            <h3 class="event__name">Бесплатная доставка</h3>
-            <p class="event__info">Согласуем и привезём запчасти в офис или домой в удобное для Вас время.
-            </p>
-            <button class="event__btn">Заявка на подбор</button>
-        </div>
-    </section>
-    <section class="promo">
-        <div class="promo__card">
-            <h3 class="promo__name">Щетки AWM</h3>
-            <a href="#" class="promo__link">Подробнее</a>
-        </div>
-        <div class="promo__card">
-            <h3 class="promo__name"><span class="promo__date">Весь январь</span> Скидка 20% на весь DOT4</h3>
-            <a href="#" class="promo__link">Подробнее</a>
-        </div>
-    </section> 
+        <section class="slider">
+            <div class="container">
+                <button class="slider__arrow slider__arrow--left"><svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.75 9H3.38043L10.1465 1.9378L8.8587 0.75L0.25 9.75L8.8587 18.75L10.0326 17.5761L3.38043 10.5H25.75V9Z" fill="white"/>
+                    </svg></button>
+                <button class="slider__arrow slider__arrow--right"><svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.25 9H22.6196L15.8535 1.9378L17.1413 0.75L25.75 9.75L17.1413 18.75L15.9674 17.5761L22.6196 10.5H0.25V9Z" fill="white"/>
+                    </svg></button>
+                <h2 class="visually-hidden">Слайдер с предложениями</h2>
+                <div class="slider__item">
+                    Фильтр масла в подарок</div>
+            </div>
+        </section>
+        <section class="event">
+            <div class="container">
+                <div class="event__card">
+                    <h3 class="event__name">Бесплатный звонок</h3>
+                    <p class="event__info">
+                        На любые номера РФ
+                        <a href="tel:88005501980" class="event__number">8 800 550-19-80</a>
+                    </p>
+                    <button class="event__btn event__btn--whatsapp">WhatsApp</button>
+                </div>
+                <div class="event__card">
+                    <h3 class="event__name">Бесплатный подбор</h3>
+                    <p class="event__info">Мы найдем самую низкую цену на оригинальную запчасть, достойную альтернативу
+                        или
+                        самый дешевый аналог.
+                    </p>
+                    <button class="event__btn">Заявка на подбор</button>
+                </div>
+                <div class="event__card">
+                    <h3 class="event__name">Бесплатная доставка</h3>
+                    <p class="event__info">Согласуем и привезём запчасти в офис или домой в удобное для Вас время.
+                    </p>
+                    <button class="event__btn">Заявка на подбор</button>
+                </div>
+            </div>
+        </section>
+        <section class="promo">
+            <div class="container">
+                <div class="promo__card">
+                    <h3 class="promo__name">Щетки AWM</h3>
+                    <a href="#" class="promo__link">Подробнее</a>
+                </div>
+                <div class="promo__card">
+                    <h3 class="promo__name"><span class="promo__date">Весь январь</span> Скидка 20% на весь DOT4</h3>
+                    <a href="#" class="promo__link">Подробнее</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-        <div class="footer__info">
-            <a href="#" class="footer__link">Подбор запчастей</a>
-            <a href="#" class="footer__link">Доставка</a>
-            <a href="#" class="footer__link">Как купить</a>
-            <a href="#" class="footer__link">Оплата</a>
-            <a href="#" class="footer__link">Договор оферты</a>
-            <a href="#" class="footer__link">Политика конфиденциальности</a>
-            <a href="#" class="footer__link">Реквизиты</a>
-            <a href="#" class="footer__link">Контакты</a>
-            <a href="#" class="footer__link">Акции</a>
-        </div>
-        <ul class="social">
-            <li class="social__item"><a href="#" class="social__link"><span class="visually-hidden">В контакте</span></a></li>
-            <li class="social__item"><a href="#" class="social__link"><span class="visually-hidden">WhatsApp</span></a></li>
-            <li class="social__item"><a href="#" class="social__link"><span class="visually-hidden">Instagram</span></a></li>
-        </ul>
-        <div class="autor">
-            <span class="autor__name">Дизайн &mdash; <a href="#" class="autor__link">&laquo;Есть Идея!&raquo;</a></span>
+        <div class="container">
+            <div class="footer__info">
+                <a href="#" class="footer__link">Подбор запчастей</a>
+                <a href="#" class="footer__link">Доставка</a>
+                <a href="#" class="footer__link">Как купить</a>
+                <a href="#" class="footer__link">Оплата</a>
+                <a href="#" class="footer__link">Договор оферты</a>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+                <a href="#" class="footer__link">Реквизиты</a>
+                <a href="#" class="footer__link">Контакты</a>
+                <a href="#" class="footer__link">Акции</a>
+            </div>
+            <ul class="social">
+                <li class="social__item"><a href="#" class="social__link"><span class="visually-hidden">В
+                            контакте</span></a></li>
+                <li class="social__item"><a href="#" class="social__link"><span
+                            class="visually-hidden">WhatsApp</span></a>
+                </li>
+                <li class="social__item"><a href="#" class="social__link"><span
+                            class="visually-hidden">Instagram</span></a>
+                </li>
+            </ul>
+            <div class="autor">
+                <span class="autor__name">Дизайн &mdash; <a href="#" class="autor__link">&laquo;Есть
+                        Идея!&raquo;</a></span>
+            </div>
         </div>
     </footer>
-    </body>
+</body>
 
 </html>
